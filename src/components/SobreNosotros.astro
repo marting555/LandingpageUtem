@@ -1,0 +1,48 @@
+<section id="sobre-nosotros" class="py-10">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="text-center max-w-3xl mx-auto">
+      <span class="inline-flex items-center gap-2 rounded-full bg-slate-200 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-utemBlue">
+        Equipo del proyecto
+      </span>
+      <h2 class="mt-4 text-3xl font-bold">Somos estudiantes comprometidos con la innovación pública</h2>
+      <p class="mt-3 text-slate-600 text-sm sm:text-base">
+        Este prototipo fue desarrollado para Computación Móvil con el propósito de mejorar la comunicación digital de Ingeniería en Informática UTEM y acercar la oferta académica a postulantes.
+      </p>
+    </div>
+
+    <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {[
+        { nombre: 'Jairo Martínez', rol: 'Frontend y Astro', enlace: 'https://marca-personal-indol.vercel.app/' },
+        { nombre: 'Integrante 2', rol: 'UX/UI y contenidos', enlace: '#' },
+        { nombre: 'Integrante 3', rol: 'Integración y DevOps', enlace: '#' }
+      ].map(({ nombre, rol, enlace }) => (
+        <article class="rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm" key={nombre}>
+          <div class="mx-auto h-16 w-16 rounded-full bg-gradient-to-br from-utemBlue to-utemIndigo text-white flex items-center justify-center text-xl font-semibold">
+            {nombre.charAt(0)}
+          </div>
+          <h3 class="mt-4 text-lg font-semibold text-slate-900">{nombre}</h3>
+          <p class="text-sm text-slate-600">{rol}</p>
+          <a href={enlace} target="_blank" class="mt-3 inline-block text-xs font-semibold text-utemBlue hover:underline">
+            Ver perfil
+          </a>
+        </article>
+      ))}
+    </div>
+
+    <div class="mt-12 rounded-3xl border border-slate-200 bg-white p-8 shadow-md">
+      <h3 class="text-xl font-semibold text-slate-900">Colabora con nuestra mejora continua</h3>
+      <p class="mt-3 text-sm text-slate-600">
+        Si tienes sugerencias sobre la experiencia digital de la carrera o quieres sumarte al equipo, escríbenos. Nos interesa construir una landing page que represente el valor de la UTEM.
+      </p>
+      <div class="mt-4 flex flex-wrap items-center gap-4 text-sm">
+        <a href="mailto:computacion.movil@utem.cl" class="text-utemBlue hover:underline">
+          computacion.movil@utem.cl
+        </a>
+        <span class="text-slate-400">|</span>
+        <a href="https://www.linkedin.com/school/utem/" target="_blank" class="text-utemBlue hover:underline">
+          Comunidad UTEM en LinkedIn
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

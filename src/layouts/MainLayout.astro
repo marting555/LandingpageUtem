@@ -1,0 +1,70 @@
+---
+import '../styles/global.css';
+
+const {
+  title = 'Ingeniería en Informática UTEM',
+  description = 'Descubre la carrera de Ingeniería en Informática de la UTEM: formación práctica, empleabilidad alta y comunidad tecnológica activa.'
+} = Astro.props;
+---
+---
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="min-h-screen flex flex-col bg-slate-50">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+      <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-2">
+        <a href="#inicio" class="flex items-center gap-3">
+          <img 
+            src="/images/screenshot4.png" 
+            alt="Logo UTEM" 
+            class="h-12 w-auto object-contain"
+          />
+          <span class="font-bold text-slate-800 text-base sm:text-lg">
+            <span class="font-extrabold text-utemBlue">Ingeniería en Informática</span>
+          </span>
+        </a>
+        <div class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
+          <a href="#carrera" class="hover:text-utemBlue transition">La carrera</a>
+          <a href="#caracteristicas" class="hover:text-utemBlue transition">Diferenciadores</a>
+          <a href="#plan" class="hover:text-utemBlue transition">Plan de estudios</a>
+          <a href="#sobre-nosotros" class="hover:text-utemBlue transition">Equipo</a>
+        </div>
+        <a
+          href="#contacto"
+          class="hidden sm:inline-flex items-center gap-2 rounded-full bg-utemBlue px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-utemIndigo transition"
+        >
+          Solicita información
+        </a>
+      </nav>
+    </header>
+
+    <main class="flex-1">
+      <slot />
+    </main>
+
+    <footer class="bg-slate-900 text-slate-200 py-6 mt-8">
+      <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm">
+        <div>
+          <p class="font-semibold">Ingeniería en Informática · Universidad Tecnológica Metropolitana</p>
+          <p class="text-slate-400 text-xs mt-1">Acreditada por 5 años · Campus Macul · Santiago de Chile</p>
+        </div>
+        <div class="flex flex-col sm:items-end text-xs text-slate-400">
+          <span>© 2025 UTEM. Todos los derechos reservados.</span>
+          <a href="https://www.utem.cl" target="_blank" class="text-utemBlue hover:underline mt-1">
+            www.utem.cl
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+---
+import FeatureCard from './FeatureCard.astro';
+
+const features = [
+  {
+    icon: '🛠️',
+    title: 'Aprendizaje basado en proyectos',
+    description:
+      'Cada semestre incorpora desafíos reales con clientes internos o externos, reforzando habilidades técnicas y trabajo colaborativo.'
+  },
+  {
+    icon: '💡',
+    title: 'Innovación y emprendimiento',
+    description:
+      'Accede a laboratorios, preincubadoras y mentorías para prototipar soluciones tecnológicas con impacto social y económico.'
+  },
+  {
+    icon: '🌐',
+    title: 'Red profesional UTEM',
+    description:
+      'Participa de workshops, ferias laborales y convenios con empresas TIC chilenas que buscan talento en transformación digital.'
+  },
+  {
+    icon: '🧑‍🏫',
+    title: 'Acompañamiento constante',
+    description:
+      'Contarás con tutores, ayudantías especializadas y programas de bienestar que apoyan tu experiencia universitaria.'
+  }
+];
+---
+
+<section id="caracteristicas" class="py-10 bg-white">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="text-center mx-auto max-w-2xl">
+      <span class="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-utemBlue">
+        Diferenciadores UTEM
+      </span>
+      <h2 class="mt-4 text-3xl font-bold">¿Por qué estudiar Ingeniería en Informática en la UTEM?</h2>
+      <p class="mt-3 text-slate-600 text-sm sm:text-base">
+        Una carrera pública, acreditada y conectada con la industria que forma profesionales listos para liderar proyectos digitales desde Chile hacia el mundo.
+      </p>
+    </div>
+
+    <div class="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+      {features.map((feature) => (
+        <FeatureCard {...feature} key={feature.title} />
+      ))}
+    </div>
+
+    <div class="mt-12 grid gap-6 md:grid-cols-3 text-left">
+      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
+        <h3 class="text-base font-semibold text-slate-900">Apoyo para la PAES y beneficios</h3>
+        <p class="mt-2 text-sm text-slate-600">
+          Orientaciones personalizadas, ensayos y acompañamiento para becas estatales, beneficios UTEM y articulación con educación técnica.
+        </p>
+      </div>
+      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
+        <h3 class="text-base font-semibold text-slate-900">Infraestructura moderna</h3>
+        <p class="mt-2 text-sm text-slate-600">
+          Laboratorios especializados en desarrollo web, redes, ciberseguridad y data science, con acceso extendido para proyectos.
+        </p>
+      </div>
+      <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
+        <h3 class="text-base font-semibold text-slate-900">Experiencias internacionales</h3>
+        <p class="mt-2 text-sm text-slate-600">
+          Programas de movilidad estudiantil y concursos para pasantías cortas en universidades latinoamericanas y europeas.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

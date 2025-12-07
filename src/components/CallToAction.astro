@@ -1,0 +1,55 @@
+<section class="py-10 bg-gradient-to-br from-utemBlue to-utemIndigo text-white" id="contacto">
+  <div class="max-w-6xl mx-auto px-4 grid gap-10 lg:grid-cols-[0.9fr_1.1fr] items-center">
+    <div>
+      <h2 class="text-3xl font-bold leading-tight">¿Lista o listo para dar el siguiente paso?</h2>
+      <p class="mt-4 text-sm sm:text-base text-white/80">
+        Completa el formulario o contáctanos directamente para recibir orientación personalizada sobre becas, beneficios y el proceso de admisión.
+      </p>
+      <div class="mt-6 space-y-2 text-sm">
+        <a href="mailto:informatica@utem.cl" class="inline-flex items-center gap-2">
+          <span class="h-2 w-2 rounded-full bg-emerald-300"></span>
+          informatica@utem.cl
+        </a>
+        <a href="tel:+56212345678" class="inline-flex items-center gap-2">
+          <span class="h-2 w-2 rounded-full bg-emerald-300"></span>
+          +56 2 1234 5678
+        </a>
+        <a href="https://wa.me/56912345678" class="inline-flex items-center gap-2" target="_blank">
+          <span class="h-2 w-2 rounded-full bg-emerald-300"></span>
+          WhatsApp Admisión UTEM
+        </a>
+      </div>
+    </div>
+    <form class="rounded-3xl bg-white/10 p-8 backdrop-blur shadow-xl space-y-4">
+      <div>
+        <label class="text-sm font-semibold text-white/80" for="nombre">Nombre completo</label>
+        <input id="nombre" type="text" placeholder="Tu nombre" class="mt-1 w-full rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder-white/50 focus:border-white/60 focus:outline-none" />
+      </div>
+      <div>
+        <label class="text-sm font-semibold text-white/80" for="rut">RUT</label>
+        <input id="rut" type="text" placeholder="11.111.111-1" class="mt-1 w-full rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder-white/50 focus:border-white/60 focus:outline-none" />
+      </div>
+      <div class="grid gap-4 sm:grid-cols-2">
+        <div>
+          <label class="text-sm font-semibold text-white/80" for="correo">Correo</label>
+          <input id="correo" type="email" placeholder="correo@ejemplo.cl" class="mt-1 w-full rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder-white/50 focus:border-white/60 focus:outline-none" />
+        </div>
+        <div>
+          <label class="text-sm font-semibold text-white/80" for="telefono">Teléfono</label>
+          <input id="telefono" type="tel" placeholder="+56 9 ..." class="mt-1 w-full rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder-white/50 focus:border-white/60 focus:outline-none" />
+        </div>
+      </div>
+      <div>
+        <label class="text-sm font-semibold text-white/80" for="interes">¿Qué te interesa conocer?</label>
+        <textarea id="interes" rows="3" placeholder="Cuéntanos en qué podemos ayudarte" class="mt-1 w-full rounded-xl border border-white/20 bg-white/10 px-3 py-2 text-sm text-white placeholder-white/50 focus:border-white/60 focus:outline-none"></textarea>
+      </div>
+      <label class="flex items-start gap-3 text-xs text-white/70">
+        <input type="checkbox" class="mt-0.5 h-4 w-4 rounded border-white/30 bg-white/10 text-utemBlue focus:ring-white" />
+        Acepto ser contactado/a por la UTEM para recibir información sobre admisión y actividades profesionales.
+      </label>
+      <button type="button" class="w-full rounded-full bg-white px-4 py-3 text-sm font-semibold text-utemBlue shadow-md hover:bg-slate-100 transition">
+        Enviar solicitud
+      </button>
+    </form>
+  </div>
+</section>
