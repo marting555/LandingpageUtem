@@ -132,10 +132,14 @@ git remote add origin <URL-de-tu-repositorio>
 git push -u origin main
 ```
 
-## 👨‍💻 Autor
+## 👨‍💻 Autores
 
 **Jairo Martínez**  
 Estudiante de Ingeniería en Informática · UTEM  
+
+**Bryan Vogt**
+Estudiante de Ingeniería en Informática · UTEM
+
 Proyecto desarrollado para Computación Móvil - 2025
 
 ---
