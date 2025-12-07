@@ -4,7 +4,7 @@ Proyecto de landing page desarrollado con **Astro** y **Tailwind CSS** para la a
 
 ## 📋 Descripción del Proyecto
 
-Esta landing page fue diseñada para promover la carrera de Ingeniería en Informática de la UTEM, destacando sus principales características, perfil de egreso, plan de estudios y oportunidades que ofrece a los estudiantes. El sitio está optimizado para dispositivos móviles y de escritorio, utilizando tecnologías web modernas.
+Esta landing page fue diseñada para promover la carrera de Ingeniería en Informática de la UTEM, destacando sus principales características, perfil de egreso, plan de estudios y oportunidades que ofrece a los estudiantes. El sitio está optimizado para dispositivos móviles y de escritorio, utilizando tecnologías web estudiadas en la clase de computacion movil.
 
 ## 📑 Tabla de Contenidos
 
@@ -107,23 +107,7 @@ trabajo landing page/
 - **Accesibilidad:** Estructura semántica HTML5
 - **Colores Institucionales:** Paleta oficial UTEM integrada
 
-## 🧪 Checklist de Evaluación del Profesor
 
-| Requisito | Estado |
-|-----------|--------|
-| Uso de Astro con Tailwind CSS | ✅ Cumplido |
-| Hero con CTA + imagen institucional | ✅ Cumplido |
-| Sección de diferenciadores/ventajas | ✅ Cumplido |
-| Información del plan de estudios | ✅ Cumplido |
-| Integración de video institucional | ✅ Cumplido |
-| Sección "Sobre nosotros" con enlaces | ✅ Cumplido |
-| Formulario o CTA de contacto | ✅ Cumplido |
-| Footer informativo | ✅ Cumplido |
-| Diseño responsive verificado | ✅ Cumplido |
-| Código organizado en componentes | ✅ Cumplido |
-| Enlaces externos activos | ✅ Cumplido |
-
-> **Observación:** Cada punto fue revisado en el navegador al 100% de zoom y en vistas simuladas de móvil y escritorio.
 
 ## 🚀 Despliegue
 
@@ -135,12 +119,7 @@ npm run build
 
 Los archivos estáticos se generarán en la carpeta `dist/`.
 
-## 📝 Notas de Desarrollo
 
-- El código cumple con los estándares de Astro y mejores prácticas de desarrollo web
-- Los componentes están documentados y son fácilmente personalizables
-- Las imágenes fueron extraídas del sitio oficial de UTEM para mantener consistencia visual
-- El repositorio está preparado para versionamiento con Git (ver sección de comandos sugeridos más abajo)
 
 ### Comandos útiles para Git
 
@@ -161,4 +140,4 @@ Proyecto desarrollado para Computación Móvil - 2025
 
 ---
 
-*Desarrollado con ❤️ para la Universidad Tecnológica Metropolitana*
+
